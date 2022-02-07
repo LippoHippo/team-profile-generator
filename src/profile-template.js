@@ -1,9 +1,15 @@
+const Employee = require('../lib/Employee');
+const Engineer = require('../lib/Engineer');
+const Intern   = require('../lib/Intern'  );
+const Manager  = require('../lib/Manager' );
+
 const generateHeader = headerText => {
     return `
-        <header>
-             
+        <header class="has-background-warning has-text-white has-text-centered">
+            <h1>My Team</h1>
+        </header>         
     `
-}
+};
 
 function templateData(data) {
     console.log(templateData);
@@ -20,10 +26,12 @@ function templateData(data) {
         <title>Concert Scout</title>
     </head>
 
-    <body>
+    <body class="columns flex-wrap">
 
     ${generateHeader}
 
+    </body>
+    </html>
     `
 
 }
